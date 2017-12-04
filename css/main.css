@@ -1,1 +1,22 @@
 /* Los estilos de tu proyecto */
+.icon-bar {
+  color: grey;
+  border-color: grey;
+  background-color: grey;
+}
+
+.home{
+	margin:0;
+	background-image: url(../assets/images/taxi.jpg);
+	background-position: bottom;
+	height: auto;
+	background-size: cover;
+	background-repeat: no-repeat;
+	width: 100%;
+	color: #fff;
+}
+
+.registro{
+	background-color: #F7B617;
+	margin-top: 15%;
+}
