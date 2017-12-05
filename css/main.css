@@ -164,8 +164,17 @@ li a{
 	color:#fff;
 }
 
-::placeholder{
-	color: #ffff;
+.travel::-webkit-input-placeholder {  
+	color: white; 
+} 
+.travel::-moz-placeholder {   
+	color: white; 
+} 
+.travel::-ms-input-placeholder {    
+	color: white;
+} 
+.travel::-moz-placeholder {    
+	color: white; 
 }
 
 .shapeTwo{
