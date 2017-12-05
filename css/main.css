@@ -1,10 +1,15 @@
-/* Los estilos de tu proyecto */
+/* nav */
 .icon-bar {
   color: grey;
   border-color: grey;
   background-color: grey;
 }
 
+li a{
+	color: #505050;
+}
+
+/* home */
 .home{
 	margin:0;
 	background-image: url(../assets/images/taxi.jpg);
@@ -16,7 +21,89 @@
 	color: #fff;
 }
 
+/* home registro*/
 .registro{
 	background-color: #F7B617;
-	margin-top: 15%;
+	margin-top: 3%;
+}
+.registro h1{
+	font-size: 3em;
+}
+
+.registro h5 {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+.registro h5:after {
+    display: inline-block;
+    margin: 0 0 8px 20px;
+    height: 1px;
+    content: " ";
+    vertical-align: center;
+    text-shadow: none;
+    background-color: #fff;
+    width: 100px;
+}
+.registro h5:before {
+    display: inline-block;
+    margin: 0 20px 8px 0;
+    height: 1px;
+    content: " ";
+    vertical-align: center;
+    text-shadow: none;
+    background-color: #fff;
+    width: 100px;
+}
+
+/* seccion descarga app*/
+.app{
+	background-color: #F7B617;
+	color:#fff;
+	font-size: 1.3em;
+	font-weight: lighter;
+}
+
+.app p{
+	margin-top: 30px;
+}
+.line{
+	
+	border:1px solid white;
+	height: 300px;
+	margin: 50px 0 50px 0;
+	height: auto;
+}
+
+/* seccion conduce */
+
+.conduce{
+	margin:0;
+	background-image: url(../assets/images/conduce.jpg);
+	background-position: bottom;
+	height: auto;
+	background-size: cover;
+	background-repeat: no-repeat;
+	width: 100%;
+	color: #fff;
+	font-size: 3em;
+}
+
+
+
+.conduceBox{
+	background-color: rgba(0,0,0, 0.5);
+	height: 450px;
+	padding: 40px;
+	padding-top: 60px;
+	vertical-align: bottom;
+
+}
+
+.conductor{
+	background-color: #F7A733;
+	color: white;
 }
