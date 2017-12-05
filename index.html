@@ -7,11 +7,116 @@
 	<title>Lab Car Boilerplate</title>
 	<!-- Latest compiled and minified CSS -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link rel="stylesheet" href="css/modal.css">
 	<link rel="stylesheet" href="css/main.css">
 	<link rel="stylesheet" href="assets/font-awesome-4.7.0/css/font-awesome.min.css">
 	</head>
 <body>
-	
+
+<!--modal1-->
+
+
+
+
+<!-- BEGIN # MODAL LOGIN -->
+<div class="modal fade" id="login-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
+    	<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header" align="center">
+					<img class="img-circle" id="img_logo" src="https://image.freepik.com/iconos-gratis/silueta-usuario-masculino_318-35708.jpg">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+					</button>
+				</div>
+                
+                <!-- Begin # DIV Form -->
+                <div id="div-forms">
+                
+                    <!-- Begin # Login Form -->
+                    <form id="login-form">
+		                <div class="modal-body">
+				    	
+				    		<input id="login_username" class="form-control" type="text" placeholder="Username (type ERROR for error effect)" required>
+				    		<input id="login_password" class="form-control" type="password" placeholder="Password" required>
+                            <div class="checkbox">
+                                <label>
+                                    <input type="checkbox"> Recuérdame porfis </label>
+                            </div>
+        		    	</div>
+				        <div class="modal-footer">
+                            <div>
+                                <button type="submit" class="btn btn-warning btn-lg btn-block">Login</button>
+                            </div>
+				    	    <div>
+                                <button id="login_lost_btn" type="button" class="btn btn-link">Olvidaste tu cuenta?</button>
+                                <button id="login_register_btn" type="button" class="btn btn-link">Register</button>
+                            </div>
+				        </div>
+                    </form>
+                    <!-- End # Login Form -->
+                    
+                    <!-- Begin | Lost Password Form -->
+                    <form id="lost-form" style="display:none;">
+    	    		    <div class="modal-body">
+		    				<div id="div-lost-msg">
+                                <div id="icon-lost-msg" class="glyphicon glyphicon-chevron-right"></div>
+                                <span id="text-lost-msg">Type your e-mail.</span>
+                            </div>
+		    				<input id="lost_email" class="form-control" type="text" placeholder="E-Mail" required>
+            			</div>
+		    		    <div class="modal-footer">
+                            <div>
+                                <button type="submit" class="btn btn-primary btn-lg btn-block">Send</button>
+                            </div>
+                            <div>
+                                <button id="lost_login_btn" type="button" class="btn btn-link">Inicio Sesion</button>
+                                <button id="lost_register_btn" type="button" class="btn btn-link">Register</button>
+                            </div>
+		    		    </div>
+                    </form>
+                    <!-- End | Lost Password Form -->
+                    
+                    <!-- Begin | Register Form -->
+                    <form id="register-form" style="display:none;">
+            		    <div class="modal-body">
+		    				<div id="div-register-msg">
+                                <div id="icon-register-msg" class="glyphicon glyphicon-chevron-right"></div>
+                                <span id="text-register-msg">Register an account.</span>
+                            </div>
+		    				<input id="register_username" class="form-control" type="text" placeholder="Username (type ERROR for error effect)" required>
+                            <input id="register_email" class="form-control" type="text" placeholder="E-Mail" required>
+                            <input id="register_password" class="form-control" type="password" placeholder="Password" required>
+            			</div>
+		    		    <div class="modal-footer">
+                            <div>
+                                <button type="submit" class="btn btn-primary btn-lg btn-block">Register</button>
+                            </div>
+                            <div>
+                                <button id="register_login_btn" type="button" class="btn btn-link">Log In</button>
+                                <button id="register_lost_btn" type="button" class="btn btn-link">Lost Password?</button>
+                            </div>
+		    		    </div>
+                    </form>
+                    <!-- End | Register Form -->
+                    
+                </div>
+                <!-- End # DIV Form -->
+                
+			</div>
+		</div>
+	</div>
+    <!-- END # MODAL LOGIN -->
+
+
+
+
+
+<!--REGISTRO-->
+
+
+
+
+	<!--NAVEGADOR-->
 <nav class="navbar navbar-default navbar-fixed-top">
 	<div class="container-fluid">
 		<!-- Brand and toggle get grouped for better mobile display -->
@@ -23,7 +128,7 @@
 				<span class="icon-bar"></span>
 			</button>
 			<a class="navbar-brand" href="#">
-        <img class="img-responsive" alt="logoForma" src="assets/images/logoForma.png">
+        <img class="img-responsive logoForma" alt="logoForma" src="assets/images/logoForma.png">
       </a>
 		</div>
 
@@ -32,7 +137,7 @@
 			<ul class="nav navbar-nav">
 				<li class="active"><a href="#">Viaja <span class="sr-only">(current)</span></a></li>
 				<li><a href="#">Conduce</a></li>
-				<li><a href="#">Inicia Sesión</a></li>
+				<li><a data-toggle="modal" data-target="#login-modal" href="#">Inicia Sesión</a></li>
         
       </ul>
     </div><!-- /.navbar-collapse -->
@@ -75,26 +180,31 @@
 							<p>La versión actualizada de LabCar está llena de nuevas funciones para llegar a donde quieras aún más facil y rápido</p>
 							<p class="hidden-xs hidden-sm visible-md visible-lg">Con solo tocar un botón, un auto llega justo a tu ubicación. Súbete y no te preocupes: tu conductor sabe exactamente a dónde ir</p>
 						</div>
-				</div> 
-			</div><!--cierre line-->
-			<!--frase mobile bottom-->
-				<div class="row visible-xs hidden-sm text-center">
-					<div class="col-sx-offset-1 col-sx-11">
-						<h5 class="text-left">Llega a tu destino aún mas rapido</h5>
+				</div>
+				<div class="row visible-xs hidden-sm">
+					<div class="col-sx-offset-2 col-sx-10">
+						<h5 class="text-center">Llega a tu destino aún mas rapido</h5>
 					</div>
 				</div>
+			</div><!--cierre line-->
+			<!--frase mobile bottom-->
+				
 	</section>
 
+
 		<!--section IMAGEN conduce cuando quieras-->
-	<section class="img-responsive conduce">
-		<div class="row">
-			<div class="col-md-offset-8 col-md-4 opacidad jumbotron conduceBox">
-				<h3>Conduce cuando quieras</h3>
-				<p>LabCar es una opción flexible para alcanzar tus metas financieras</p>
+	<section class="conduce">
+		<div class="container">
+			<div class="row">
+				<div class="col-sx-12 col-sm-12 8  col-md-4 col-lg-4 opacidad pull-right">
+					<h3>Conduce cuando quieras</h3>
+					<p>LabCar es una opción flexible para alcanzar tus metas financieras</p>
 					<button type="button" class="btn btn-default conductor">Conviertete en un conductor</button>
 				</div>
 			</div>
+		</div>
 	</section>
+
 
 <!--seccion Tarifas-->
 	<section class="tarifa">
@@ -130,9 +240,14 @@
 				</div><!-- fin col left -->
 
 				<!-- mapa google col rigth -->
-				<div class="col-xs-12 col-sm-12 col-md-5 map">
+				<div class="hidden-xs hidden-sm col-md-5 map">
 					<iframe class="thumbnail img-responsive" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d62523112.01406334!2d-111.68263479507961!3d-15.610283760438165!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x90f99effb40af535%3A0xd2673dbf02a5b69c!2sLatin+America!5e0!3m2!1ses-419!2scl!4v1512399612050" width="500" height="500" frameborder="0" style="border:0" allowfullscreen></iframe>
 				</div><!-- fin col right -->
+
+				<!-- mapa google col rigth version movil -->
+				<div class="col-xs-12 col-sm-12 hidden-md hidden-lg map">
+					<iframe class= "thumbnail img-responsive" src="https://www.google.com/maps/embed/v1/directions?key=AIzaSyAqgT7QzhdBNPjaIGTwfuN9bImYx8OQ9nY&origin=San+Miguel,+Pedro+Aguirre+Cerda,+Región+Metropolitana&destination=Puma+1180,+Recoleta" allowfullscreen></iframe>
+				</div>
 			</div>
 		</div>
 	</section>
@@ -195,14 +310,14 @@
 					<i class="fa fa-apple" aria-hidden="true"></i>
 					<i class="fa fa-play" aria-hidden="true"></i>
 				</div>
-				<!--texto autor-->
-				<div class="row">
+				<!--texto autor--> 
+			</div><!--row iconos-->
+			<div class="row">
 					
 					<div class="col-xs-12col-sm-12 col-md-12 final">
 					<hr><!--linea-->
 					<p>&#9400; LabCar technologies Inc.</p></div>
-				</div> 
-			</div><!--row iconos-->
+				</div>
 		</div><!--container-->
 	</footer>
 

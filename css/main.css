@@ -1,4 +1,6 @@
-/* nav */
+*{
+	overflow-x: hidden;
+}
 
 .icon-bar {
   color: grey;
@@ -8,6 +10,10 @@
 
 li a{
 	color: #505050;
+}
+
+.logoForma{
+	height: 100%;
 }
 
 /* home */
@@ -26,8 +32,9 @@ li a{
 /* home registro*/
 .registro{
 	background-color: #F7B617;
-	margin-top: 5%;
-	min-height: 300px;
+	margin-top: 9%;
+	height: auto;
+	padding: 20px;
 }
 .registro h1{
 	font-size: 3em;
@@ -72,6 +79,7 @@ li a{
 
 .app p{
 	margin-top: 30px;
+	font-size: 1em;
 }
 .line{
 	
@@ -86,6 +94,11 @@ li a{
 	color: #505050;
 	margin-top: 20px;
 	margin-left: 20px;
+}
+
+.app h3{
+	font-size: 1.2em;
+	font-weight: bold;
 }
 
 .registrate{
@@ -103,23 +116,24 @@ li a{
 /* seccion conduce */
 
 .conduce{
-	margin:0;
+	
 	background-image: url(../assets/images/conduce.jpg);
 	background-position: bottom;
 	height: auto;
 	background-size: cover;
 	background-repeat: no-repeat;
-	width: 100%;
 	color: #fff;
-	font-size: 3em;
+	font-size: 1.5em;
 }
 
-.conduceBox{
+.conduce h3{
+	font-weight: bolder;
+	font-size: 1em;
+}
+
+.opacidad{
 	background-color: rgba(0,0,0, 0.5);
-	height: 450px;
-	padding: 40px;
-	padding-top: 60px;
-	vertical-align: bottom;
+	height: 400px;
 
 }
 
@@ -150,8 +164,8 @@ li a{
 	color:#fff;
 }
 
-.shapeOne input:placeholder{
-	color:#fff;
+::placeholder{
+	color: #ffff;
 }
 
 .shapeTwo{
