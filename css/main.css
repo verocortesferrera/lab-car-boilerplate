@@ -56,7 +56,7 @@ li a{
     vertical-align: center;
     text-shadow: none;
     background-color: #fff;
-    width: 150px;
+    width: 120px;
 }
 .registro h5:before {
     display: inline-block;
@@ -66,7 +66,7 @@ li a{
     vertical-align: center;
     text-shadow: none;
     background-color: #fff;
-    width: 150px;
+    width: 120px;
 }
 
 /* seccion descarga app*/
@@ -142,6 +142,11 @@ li a{
 	color: white;
 }
 
+.conductor:hover{
+	background-color: #F7A733;
+	color: #ffff;
+}
+
 /* seccion TARIFAS */
 
 .tarifa{
@@ -203,6 +208,10 @@ li a{
 	color:#505050;
 }
 
+.ruta{
+	margin-bottom: 20px;
+}
+
 
 /*footer*/
 .footerDown{
@@ -225,10 +234,21 @@ li a{
 
 .menuFooter li{
 	margin-top:5px;
+	list-style: none;
 }
 .menuFooter li a{
 	color:#fff;
 	font-size: 0.8em;
+	text-decoration: none;
+}
 
+.menuFooter li a:hover{
+	color: #F7A733;
+	font-size: 0.9em;
+}
+
+.iconos .fa{
+	color: #fff;
+	margin-right: 10px;
 }
 
