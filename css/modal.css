@@ -11,6 +11,7 @@
 
 #login-modal .modal-dialog {
     width: 300px;
+
 }
 
 #login-modal input[type=text], input[type=password] {
@@ -139,6 +140,10 @@
 
 .form-control {
   border-radius: 0px;
+}
+
+.close{
+    font-size: 10px;
 }
 
 
