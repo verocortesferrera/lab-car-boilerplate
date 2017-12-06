@@ -123,12 +123,12 @@ li a{
 	background-size: cover;
 	background-repeat: no-repeat;
 	color: #fff;
-	font-size: 1.5em;
+	font-size: 1em;
 }
 
 .conduce h3{
 	font-weight: bolder;
-	font-size: 1em;
+	font-size: 1.5em;
 }
 
 .opacidad{
@@ -159,6 +159,10 @@ li a{
 	padding: 20px;
 }
 
+.tariRow h3{
+	font-weight: bolder;
+}
+
 .shapeOne{
 	margin-top: 30px;
 }
@@ -171,15 +175,19 @@ li a{
 
 .travel::-webkit-input-placeholder {  
 	color: white; 
+	font-size: 0.7em;
 } 
 .travel::-moz-placeholder {   
 	color: white; 
+	font-size: 0.7em;
 } 
 .travel::-ms-input-placeholder {    
 	color: white;
+	font-size: 0.7em;
 } 
 .travel::-moz-placeholder {    
 	color: white; 
+	font-size: 0.7em;
 }
 
 .shapeTwo{

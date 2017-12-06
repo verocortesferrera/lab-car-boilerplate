@@ -82,7 +82,7 @@
 .modal-content {
     background-color: #ececec;
     border: 1px solid #bdc3c7;
-    border-radius: 0px;
+    border-radius: 5px;
     outline: 0;
 }
 
@@ -108,7 +108,7 @@
 }
 
 .btn {
-    border-radius: 0px;
+    border-radius: 5px;
 }
 
 .btn:focus,
@@ -121,7 +121,7 @@
 }
 
 .btn-lg, .btn-group-lg>.btn {
-    border-radius: 0px;
+    border-radius: 5px;
 }
 
 .btn-link {
