@@ -16,8 +16,8 @@
 <!--modal INICIO SESION-->
 
 <!-- BEGIN # MODAL LOGIN -->
-<div class="modal fade" id="login-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
-    	<div class="modal-dialog">
+	<div class="modal fade" id="login-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
+		<div class="modal-dialog">
 			<div class="modal-content">
 				<div class="modal-header" align="center">
 					<img class="img-circle" id="img_logo" src="https://image.freepik.com/iconos-gratis/silueta-usuario-masculino_318-35708.jpg">
@@ -25,80 +25,81 @@
 						<span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
 					</button>
 				</div>
-                
-                <!-- Begin # DIV Form -->
-                <div id="div-forms">
-                
-                    <!-- Begin # Login Form -->
-                    <form id="login-form">
-		                <div class="modal-body">
-				    	
-				    		<input id="login_username" class="form-control" type="text" placeholder="Usuario" required>
-				    		<input id="login_password" class="form-control" type="password" placeholder="Contraseña" required>
-                            <div class="checkbox">
-                                <label>
-                                    <input type="checkbox"> Recordar</label>
-                            </div>
-        		    	</div>
-				        <div class="modal-footer">
-                            <div>
-                                <button type="submit" class="btn btn-warning btn-lg btn-block">Inicio Sesión</button>
-                            </div>
-				    	    <div>
-                                <button id="login_lost_btn" type="button" class="btn btn-link">Olvidaste tu cuenta?</button>
-                                <button id="login_register_btn" type="button" class="btn btn-link">Registrar</button>
-                            </div>
-				        </div>
+
+        <!-- Begin # DIV Form -->
+        <div id="div-forms">
+
+           <!-- Begin # Login Form -->
+           <form id="login-form">
+							<div class="modal-body">
+
+								<input id="login_username" class="form-control" type="text" placeholder="Usuario" required>
+								<input id="login_password" class="form-control" type="password" placeholder="Contraseña" required>
+									<div class="checkbox">
+                    <label>
+                      <input type="checkbox"> Recordar</label>
+                    </div>
+									</div>
+
+									<div class="modal-footer">
+										<div>
+											<button type="submit" class="btn btn-warning btn-lg btn-block">Inicio Sesión</button>
+                    </div>
+										<div>
+                      <button id="login_lost_btn" type="button" class="btn btn-link">Olvidaste tu cuenta?</button>
+                      <button id="login_register_btn" type="button" class="btn btn-link">Registrar</button>
+                     </div>
+									</div>
                     </form>
                     <!-- End # Login Form -->
-                    
+
                     <!-- Begin | Lost Password Form -->
                     <form id="lost-form" style="display:none;">
-    	    		    <div class="modal-body">
-		    				<div id="div-lost-msg">
-                                <div id="icon-lost-msg" class="glyphicon glyphicon-chevron-right"></div>
-                                <span id="text-lost-msg">Type your e-mail.</span>
-                            </div>
-		    				<input id="lost_email" class="form-control" type="text" placeholder="E-Mail" required>
-            			</div>
-		    		    <div class="modal-footer">
-                            <div>
-                                <button type="submit" class="btn btn-primary btn-lg btn-block">Send</button>
-                            </div>
-                            <div>
-                                <button id="lost_login_btn" type="button" class="btn btn-link">Inicio Sesion</button>
-                                <button id="lost_register_btn" type="button" class="btn btn-link">Register</button>
-                            </div>
-		    		    </div>
+											<div class="modal-body">
+												<div id="div-lost-msg">
+                           <div id="icon-lost-msg" class="glyphicon glyphicon-chevron-right"></div>
+                               <span id="text-lost-msg">Type your e-mail.</span>
+                         </div>
+												<input id="lost_email" class="form-control" type="text" placeholder="E-Mail" required>
+            					</div>
+
+											<div class="modal-footer">
+                         <div>
+                          	<button type="submit" class="btn btn-primary btn-lg btn-block">Send</button>
+                          </div>
+                          <div>
+                          	<button id="lost_login_btn" type="button" class="btn btn-link">Inicio Sesion</button>
+                            <button id="lost_register_btn" type="button" class="btn btn-link">Register</button>
+													</div>
+											</div>
                     </form>
                     <!-- End | Lost Password Form -->
-                    
+
                     <!-- Begin | Register Form -->
                     <form id="register-form" style="display:none;">
-            		    <div class="modal-body">
-		    				<div id="div-register-msg">
-                                <div id="icon-register-msg" class="glyphicon glyphicon-chevron-right"></div>
-                                <span id="text-register-msg">Register an account.</span>
-                            </div>
-		    				<input id="register_username" class="form-control" type="text" placeholder="Username (type ERROR for error effect)" required>
-                            <input id="register_email" class="form-control" type="text" placeholder="E-Mail" required>
-                            <input id="register_password" class="form-control" type="password" placeholder="Password" required>
-            			</div>
-		    		    <div class="modal-footer">
-                            <div>
-                                <button type="submit" class="btn btn-primary btn-lg btn-block">Register</button>
-                            </div>
-                            <div>
-                                <button id="register_login_btn" type="button" class="btn btn-link">Log In</button>
-                                <button id="register_lost_btn" type="button" class="btn btn-link">Lost Password?</button>
-                            </div>
-		    		    </div>
+											<div class="modal-body">
+												<div id="div-register-msg">
+                          <div id="icon-register-msg" class="glyphicon glyphicon-chevron-right"></div>
+                          <span id="text-register-msg">Register an account.</span>
+                        </div>
+												<input id="register_username" class="form-control" type="text" placeholder="Username (type ERROR for error effect)" required>
+                        <input id="register_email" class="form-control" type="text" placeholder="E-Mail" required>
+                        <input id="register_password" class="form-control" type="password" placeholder="Password" required>
+											</div>
+
+											<div class="modal-footer">
+                         <div>
+														<button type="submit" class="btn btn-primary btn-lg btn-block">Register</button>
+												</div>
+												<div>
+													<button id="register_login_btn" type="button" class="btn btn-link">Log In</button>
+                        	<button id="register_lost_btn" type="button" class="btn btn-link">Lost Password?</button>
+                      	</div>
+											</div>
                     </form>
                     <!-- End | Register Form -->
-                    
-                </div>
-                <!-- End # DIV Form -->
-                
+
+          </div><!-- End # DIV Form -->
 			</div>
 		</div>
 	</div>
@@ -116,6 +117,9 @@
         <div class="row centered-form">
         <div class="col-xs-12 col-sm-8 col-md-4 col-sm-offset-2 col-md-offset-4">
         	<div class="panel panel-default">
+        	        	        	<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+					</button>
         		<div class="panel-heading">
 			    		<h3 class="panel-title">Ya tienes una cuenta?</h3>
 			 			</div>
@@ -151,7 +155,7 @@
 			    				</div>
 			    			</div>
 			    			
-			    			<input type="submit" value="Register" class="btn btn-warning btn-block">
+			    			<input type="submit" value="Registrate" class="btn btn-warning btn-block">
 			    		
 			    		</form>
 			    	</div>
@@ -161,6 +165,8 @@
     </div>
   </div>
 </div>
+
+
 
 <!--MODAL CONVIERTETE EN CONDUCTOR-->
 <!-- Large modal -->
@@ -228,11 +234,11 @@
 					</div>
 				</div>
 
-	 <div class="modal-footer">
-                            <div>
-                                <button type="submit" class="btn btn-warning btn-lg btn-block">ENVIAR</button>
-                            </div>
-				    	    </div>
+				<div class="modal-footer">
+          <div>
+            <button type="submit" class="btn btn-warning btn-lg btn-block">ENVIAR</button>
+          </div>
+				</div>
 
 
 
@@ -285,8 +291,10 @@
 					<button class="visible-xs visible-sm hidden-md hidden-lg btn btn-default descarga btn-lg">Descarga app</button>
 					<!--visible md-->
 					<h5 class="hidden-xs hidden-sm visible-md visible-lg">o bien</h5>
-					<!--visible cel-->
-					<button class="btn btn-default hidden-xs hidden-sm visible-md visible-lg convierte" type="button" >Conviertete en un conductor</button>
+					<!--visible md-->
+					<button data-toggle="modal" data-target=".conviertete-modal-lg" type="button" class="btn btn-default hidden-xs hidden-sm">Conviertete en un conductor</button>
+
+					
 				</div>
 			</div>
 		</div>
@@ -325,7 +333,7 @@
 				<div class="col-sx-12 col-sm-12 8  col-md-4 col-lg-4 opacidad pull-right">
 					<h3>Conduce cuando quieras</h3>
 					<p>LabCar es una opción flexible para alcanzar tus metas financieras</p>
-					<button data-toggle="modal" data-target=".conviertete-modal-lg" type="button" class="btn btn-default conductor">Conviertete en un conductor</button>
+					<button data-toggle="modal" data-target=".conviertete-modal-lg" type="button" class="btn btn-warning">Conviertete en un conductor</button>
 				</div>
 			</div>
 		</div>
@@ -366,12 +374,12 @@
 				</div><!-- fin col left -->
 
 				<!-- mapa google col rigth -->
-				<div class="hidden-xs hidden-sm col-md-6 map">
+				<div class="hidden-xs hidden-sm col-md-5 map">
 					<iframe class="thumbnail img-responsive" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d62523112.01406334!2d-111.68263479507961!3d-15.610283760438165!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x90f99effb40af535%3A0xd2673dbf02a5b69c!2sLatin+America!5e0!3m2!1ses-419!2scl!4v1512399612050" width="500" height="500" frameborder="0" style="border:0" allowfullscreen></iframe>
 				</div><!-- fin col right -->
 
 				<!-- mapa google col rigth version movil -->
-				<div class="col-xs-12 col-sm-12 hidden-md hidden-lg map">
+				<div class="col-xs-12 col-sm-5 hidden-md hidden-lg map img-responsive">
 					<iframe class= "thumbnail img-responsive" src="https://www.google.com/maps/embed/v1/directions?key=AIzaSyAqgT7QzhdBNPjaIGTwfuN9bImYx8OQ9nY&origin=San+Miguel,+Pedro+Aguirre+Cerda,+Región+Metropolitana&destination=Puma+1180,+Recoleta" allowfullscreen></iframe>
 				</div>
 			</div>
