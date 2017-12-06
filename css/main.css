@@ -171,23 +171,32 @@ li a{
 	background-color: #F7A733;
 	border:1px solid white;
 	color:#fff;
+	min-width: 10em;
+	margin:1%;
 }
 
 .travel::-webkit-input-placeholder {  
 	color: white; 
 	font-size: 0.7em;
+	min-width: 14em;
+
 } 
 .travel::-moz-placeholder {   
 	color: white; 
-	font-size: 0.7em;
+	font-size: 0.6em;
+	min-width: 15em;
+	width: 45%;
+	padding: 0;
 } 
 .travel::-ms-input-placeholder {    
 	color: white;
-	font-size: 0.7em;
+	font-size: 0.6em;
+	min-width: 14em;
 } 
 .travel::-moz-placeholder {    
 	color: white; 
 	font-size: 0.7em;
+	min-width: 15em;
 }
 
 .shapeTwo{
@@ -199,6 +208,8 @@ li a{
 	background-color: #F7A733;
 	border:1px solid white;
 	color:#fff;
+	min-width: 10em;
+	margin:1%;
 }
 .map{
 	border:1px solid white;
